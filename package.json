@@ -1,19 +1,28 @@
 {
   "name": "simple-express-handlebars-admin",
-  "version": "1.0.0",
   "description": "SIEHA - Simple Express-Handlebars Admin",
-  "main": "index.js",
-  "scripts": {
-    "start": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "1.0.0",
+  "license": "GPL-3.0-only",
   "contributors": [
     {
       "name": "Developer",
       "email": "dev@kiwfy.com"
     }
   ],
-  "license": "ISC",
+  "main": "index.js",
+  "keywords": [
+    "node",
+    "express",
+    "handlebars",
+    "hbs",
+    "admin"
+  ],
+  "readmeFilename": "README.md",
+  "scripts": {
+    "start": "nodemon index.js",
+    "lint": "./node_modules/.bin/eslint *.js ./src/**/*.js",
+    "check": "npm run lint"
+  },
   "dependencies": {
     "@popperjs/core": "^2.4.4",
     "dotenv": "^8.2.0",
@@ -21,6 +30,8 @@
     "express-hbs": "^2.3.4"
   },
   "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
     "nodemon": "^2.0.4"
   }
 }

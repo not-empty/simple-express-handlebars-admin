@@ -6,22 +6,18 @@ require('./utils/helpers/hbs-helpers')(hbs);
 
 const routes = require('./routes');
 
-function relative(path) {
-  return fp.join(__dirname, path);
-}
-
 const app = express();
 
 app.use(express.static(fp.join(__dirname, '../public')));
 app.engine('hbs', hbs.express4({
   partialsDir: [
-    relative('views/partials'),
+    fp.join(__dirname, 'views/partials'),
   ],
-  layoutsDir: relative('views/layout'),
-  defaultLayout: relative('views/layout/default.hbs'),
+  layoutsDir: fp.join(__dirname, 'views/layout'),
+  defaultLayout: fp.join(__dirname, 'views/layout/default.hbs'),
 }));
 app.set('view engine', 'hbs');
-app.set('views', relative('views'));
+app.set('views', fp.join(__dirname, 'views'));
 
 app.use(routes);
 
