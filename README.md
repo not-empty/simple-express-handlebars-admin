@@ -1,4 +1,4 @@
-# SIEHA
+# SIEHA - Simple Express-Handlebars Admin
 
 SIEHA stands for Simple Express-Handlebars Admin.
 
