@@ -6,6 +6,12 @@
 
 SIEHA stands for Simple Express-Handlebars Admin.
 
+The project has 3 main folders inside the `src` folder:
+
+- `routes` - contém as rotas para acesso das páginas do front. As rotas do frontend (que renderizam as páginas da aplicação) podem ser adicionadas no arquivo `dashboard.js`. As rotas do backend podem ser incluídas no arquivo `api.js`.
+- `utils` - contém os helpers customizados do express-hbs.
+- `views` - contém os arquivos .hbs para o frontend da aplicação, incluindo páginas e layouts.
+
 ### Installation
 
 Requires [NodeJs](https://nodejs.org/en/download/).
@@ -24,7 +30,7 @@ Use local or start with [Docker](https://docs.docker.com/get-docker/) using comp
 docker-compose up
 ```
 
-### Thanks to
+### Special thanks to
 > https://startbootstrap.com/themes/sb-admin-2/
 
 ### Development
@@ -33,7 +39,7 @@ Want to contribute? Great!
 
 The project using a simple code.
 Make a change in your file and be careful with your updates!
-**Any new code will only be accepted with all viladations.**
+**Any new code will only be accepted with all validations.**
 
 To ensure that the entire project is fine:
 
