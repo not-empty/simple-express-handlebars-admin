@@ -8,9 +8,9 @@ SIEHA stands for Simple Express-Handlebars Admin.
 
 The project has 3 main folders inside the `src` folder:
 
-- `routes` - contém as rotas para acesso das páginas do front. As rotas do frontend (que renderizam as páginas da aplicação) podem ser adicionadas no arquivo `dashboard.js`. As rotas do backend podem ser incluídas no arquivo `api.js`.
-- `utils` - contém os helpers customizados do express-hbs.
-- `views` - contém os arquivos .hbs para o frontend da aplicação, incluindo páginas e layouts.
+- `routes` - frontend pages (those that render the application pages) may be added in the file `dashboard.js`. Backend routes may be added in the file `api.js`.
+- `utils` - contains express-hbs custom helpers for the application.
+- `views` - contains .hbs files for the application frontend (pages and layouts).
 
 ### Installation
 
